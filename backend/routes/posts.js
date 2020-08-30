@@ -7,6 +7,7 @@ router.post("", checkAuth, postController.createPost);
 router.put("/:id", checkAuth, postController.updatePost);
 router.get("", checkAuth, postController.getPost);
 router.get("/:id", checkAuth, postController.getPostById);
+router.get("/user/:id", checkAuth, postController.getPostByUserId);
 router.delete("/:id", checkAuth, postController.deletePost);
 
 module.exports = router;
